@@ -14,13 +14,12 @@ const Chart = ({ data: {confirmed, deaths, recovered }, country }) => {
       setDailyData(await fetchDailyData());
     }
 
-    console.log(dailyData);
 
     fetchAPI();
   }, []);
 
   const lineChart = (
-   dailyData[0]
+   dailyData.length
    ? (
    <Line 
       data={{
@@ -49,7 +48,7 @@ const Chart = ({ data: {confirmed, deaths, recovered }, country }) => {
     />) : null
   )
 
-  console.log(confirmed, recovered, deaths)
+
 
   const barChart = (
     confirmed
