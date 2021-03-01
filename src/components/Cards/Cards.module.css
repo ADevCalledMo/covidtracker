@@ -2,7 +2,8 @@ container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0;
+    margin: 100px 0;
+ 
   }
   
   .infected {
@@ -16,3 +17,4 @@ container {
   .deaths{
     border-bottom: 10px solid rgba(255, 0, 0, 0.5);
   }
+

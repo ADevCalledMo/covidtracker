@@ -1,0 +1,9 @@
+.Footer {
+    margin-top: 3rem;
+}
+
+.Footer p {
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 30%;
+}

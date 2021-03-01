@@ -1,7 +1,6 @@
-
-import React from 'react';
-import { Typography, Grid } from '@material-ui/core';
-import CardComponent from './Card/Card';
+import React from "react";
+import { Grid } from "@material-ui/core";
+import CardComponent from "./Card/Card";
 import styles from "./Cards.module.css";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
@@ -11,7 +10,11 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
   return (
     <div className={styles.container}>
-        <Typography gutterBottom variant="h4" component="h2">Global</Typography>
+      <div className={styles.heading}>
+        <p style={{ textAlign: "center", paddingBottom: "20px", paddingTop: "20px"}}>
+          Here are the up-to-date worldwide statistics for the Covid-19 Crisis:
+        </p>
+      </div>
       <Grid container spacing={3} justify="center">
         <CardComponent
           className={styles.infected}
